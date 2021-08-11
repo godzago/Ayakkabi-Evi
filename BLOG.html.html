@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayakkabı Evi</title>
+    <link href="style.css" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+     <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="img/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>                
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ABOUT.hrml.html">ABOUT</a></li>
+                <li><a href="BLOG.html.html">BLOG</a></li>
+                <li><a href="CONTACT.html.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()" ></i>
+     </nav> 
+     <h1>BLOG</h1>
+  </section>
+<!-----------BLOG----------->
+
+<section class="blog-content" >
+         <div class="row">
+             <div class="blog-left">
+                 <img src="img/blog.jpg" alt="">
+                 <h2>Blog Yazısı</h2>
+                 <p>Yaz neredeyse burada ve istediğin vücudu ve rahatlığı elde etmen için çok geç olmadığını anlatan ve sana cesaret vermeyi odaklayan bir yazı ile tekrar seninleyiz.
+                    Tabii ki yaza hazırlık sadece karın yağı yakmaktan ya da tonlarca göğüs ve sırt egzersizi yapmaktan ibaret değil. Asıl önemli olan kendimize daha akıllı hedefler belirlemek ve daha sağlıklı yaşamak. İyi beslenmek, sağlıklı atıştırmalıklar seçmek ve doğru egzersizleri yapmak sağlıklı yaşamak isteyen herkes için önemli bir adım.<br> 
+                    Öte yandan da söylenenler doğru: Yaz vücudu kışın yapılır.
+                    Tabii şunu da kabul etmek lazım: kış bizi mahvediyor! Çoğumuz koltukta oturup atıştırmaktan ve televizyon izlemekten başka bir aktivite yaparken zorlanıyoruz. Aklımızdaki en son şey karın kası egzersizleri veya tam vücut egzersizleri olduğunda, sağlıklı beslenmek ve egzersiz yaparak yaza hazırlanmak zor. Ayrıca, spor salonları pahalı ve evde çalışmak istediğimizde de ne yapacağımızı bilemiyoruz. Tabii bir taraftan da umut ışığımız belirdi. Artık bahar geliyor ve daha iyi yaşamaya başlamak ve kış vücudumuzu geride bırakmak için henüz çok geç değil. Spor salonuna gitmeden veya spor aleti veya ekipman kullanmadan da evde egzersiz yaparak aynı sonuçları almak mümkün.
+                    Bu hedefle sana göbek yağını kaybetmen, karın kaslarını sıkılaştırman, triceplerini güçlendirmen ve o tatlı yaz günlerine hazırlanman için bir egzersiz programı hazırladık. Internette yüksek bel bikini modelleri aramaya başlamadan ya da yüzme şortun üzerine göbeğini saklamak için giyeceğin tişörtleri valizine koymadan önce günlük yaşamında küçük değişiklikler yapmaya başla. Bu egzersiz planı ilk adımlarından biri olsun!</p>
+                    
+
+                  <div class="commnet-box">
+                      <h3>Yorum Bırak</h3>
+                      <form class="comment-form">
+                          <input type="text" placeholder="İsim Gir">
+                          <input type="email" placeholder="Email Gir">
+                          <textarea  rows="5" placeholder="Yorum Gir"></textarea>
+                          <button type="submit" class="hero-btn red-btn" >Yorum Gönder</button>
+                      </form>
+                  </div>
+
+
+
+
+
+
+
+             </div>       
+             <div class="blog-right">
+                 <h3>Çalışanlar</h3>
+                 <div>
+                     <span>Front-end developer</span>
+                     <span>3</span>
+                 </div>
+                 <div>
+                    <span>Back-end developer</span>
+                    <span>2</span>
+                </div>
+                <div>
+                    <span>Marketing</span>
+                    <span>4</span>
+                </div>
+                <div>
+                    <span>Masters</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Customer representative</span>
+                    <span>12</span>
+                </div>
+             </div>
+         </div>
+</section>  
+
+<!-----------Footer----------->
+     <section class="footer">
+         <h4>ABOUT US</h4>
+         <p>Merhaba bizler sizi mutlu etmek için varız ve bunun için çok çalışıyoruz AYAKBINIZ AYAKABIMIZ </p>
+         <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+         </div>
+         <p>Made with <i class="far fa-heart"> By Demirdöven Holding</i></p>
+     </section>
+
+     <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+            navLinks.style.right = "0";
+         }
+         function hideMenu(){
+            navLinks.style.right = "-200px";
+         }
+        
+     </script>
+</body>
+</html>
